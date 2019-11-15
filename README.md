@@ -25,7 +25,7 @@ The script finishes training and testing, it will save the accuracies in a resul
 
 # Data Structure:
 The script assumes a training and testing sets of data structured as a directory of subdirectories, as follows:
-
+```
 training_data
   |
   |- 1
@@ -35,7 +35,7 @@ training_data
   .
   .
   |- x
-  
+ ```
 where x = the size of the beam-forming codebook. The name of each sub-directory refers to the beam index in the codebook, and the contents of each sub-directory "j", for examples, are the images of those users served with the jth beam in the codebook.
 
 
