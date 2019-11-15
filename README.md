@@ -11,7 +11,7 @@ Deep learning solutions are developed to tackle mmWave beam and link blockage pr
 4) Processed ViWi dataset (see [ViWi wesite](https://viwi-dataset.net/))
 
 # Running the code:
-The scripts available here are manily for training and testing a modified ResNet-18 model for mmWave beam prediction. To train and test, you need to do the following:
+The scripts available here are manily for training and testing a modified ResNet-18 model for mmWave beam prediction. With a little modification, they could also be used for the blockage prediction task. To train and test the model, you need to do the following:
 
 1) Prepare two sets of data using the ViWi framework. One set is for training and the other is for testing (For more information on the data structure, see the next section).
 
