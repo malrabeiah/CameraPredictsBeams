@@ -36,6 +36,6 @@ training_data
   .
   |- x
  ```
-where x = the size of the beam-forming codebook. The name of each sub-directory refers to the beam index in the codebook, and the contents of each sub-directory "j", for examples, are the images of those users served with the jth beam in the codebook.
+where x = the size of the beam-forming codebook. The name of each sub-directory refers to the beam index in the codebook, and the contents of sub-directory "j", for examples, are the images of those users served with the jth beam in the codebook.
 
 
