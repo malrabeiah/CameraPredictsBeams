@@ -1,2 +1,2 @@
-# VAWC
-Vision-Aided Wireless Communications: tackling mmWave and Massive MIMO problems using computer vision.
+# Camera-Based Beam Prediction:
+Depp learning model is develop to perform mmWave beam prediction using camera feed..
