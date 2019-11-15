@@ -1,2 +1,2 @@
 # Camera-Based Beam Prediction:
-Depp learning model is develop to perform mmWave beam prediction using camera feed..
+A deep learning model is develop to perform mmWave beam prediction using camera feed. Coming soon; stay tuned... ;-)
