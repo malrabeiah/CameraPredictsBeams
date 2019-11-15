@@ -1,2 +1,2 @@
-# Camera-Based Beam Prediction:
-A deep learning model is develop to perform mmWave beam prediction using camera feed. Coming soon; stay tuned... ;-)
+# mmWave Base Sations with Cameras:
+Deep learning solutions are developed to tackle mmWave beam and link blockage predictions using camera feed. Coming soon; stay tuned... ;-)
