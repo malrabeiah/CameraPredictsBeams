@@ -1,5 +1,5 @@
 # mmWave Base Stations with Cameras:
-Deep learning solutions are developed to tackle mmWave beam and link blockage predictions using camera feed. For more information, please refer to (mmWave Base Stations with Cameras: Vision Aided Beam and Blockage Prediction)[https://arxiv.org/abs/1911.06255].
+Deep learning solutions are developed to tackle mmWave beam and link blockage predictions using camera feed. For more information, please refer to [mmWave Base Stations with Cameras: Vision Aided Beam and Blockage Prediction](https://arxiv.org/abs/1911.06255).
 
 # Dependencies:
 1) Python 3.7 
@@ -38,4 +38,25 @@ training_data
  ```
 where x = the size of the beam-forming codebook. The name of each sub-directory refers to the beam index in the codebook, and the contents of sub-directory "j", for examples, are the images of those users served with the jth beam in the codebook.
 
+# Citation:
+If you use this script or part of it, please cite the following:
+```
+@ARTICLE{2019arXiv191106255A,
+       author = {{Alrabeiah}, Muhammad and {Hredzak}, Andrew and {Alkhateeb}, Ahmed},
+        title = "{Millimeter Wave Base Stations with Cameras: Vision Aided Beam and Blockage Prediction}",
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Information Theory, Electrical Engineering and Systems Science - Signal Processing},
+         year = "2019",
+        month = "Nov",
+          eid = {arXiv:1911.06255},
+        pages = {arXiv:1911.06255},
+archivePrefix = {arXiv},
+       eprint = {1911.06255},
+ primaryClass = {cs.IT},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2019arXiv191106255A},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+```
+# License
 
