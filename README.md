@@ -7,4 +7,5 @@ Deep learning solutions are developed to tackle mmWave beam and link blockage pr
 
 2) Pytorch 1.3
 
-3) NVIDIA GPU with a compatible CUDA toolkit (see (NVIDIA website)[https://developer.nvidia.com/cuda-toolkit])
+3) NVIDIA GPU with a compatible CUDA toolkit (see [NVIDIA website](https://developer.nvidia.com/cuda-toolkit)).
+
