@@ -21,7 +21,7 @@ The scripts available here are manily for training and testing a modified ResNet
 
 5) Run main.py
 
-The script finishes training and testing, it will save the accuracies in a result.mat file, and it will store the trained network.
+When the script finishes training and testing, it will save the accuracies in a result.mat file, and it will store the trained network.
 
 # Data Structure:
 The script assumes a training and testing sets of data structured as a directory of subdirectories, as follows:
