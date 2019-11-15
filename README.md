@@ -1,4 +1,4 @@
-# mmWave Base Stations with Cameras:
+# mmWave Base Stations with Cameras
 Deep learning solutions are developed to tackle mmWave beam and link blockage predictions using camera feed. For more information, please refer to [mmWave Base Stations with Cameras: Vision Aided Beam and Blockage Prediction](https://arxiv.org/abs/1911.06255).
 
 # Dependencies:
@@ -58,5 +58,5 @@ archivePrefix = {arXiv},
 }
 
 ```
-# License
+# License:
 This code package is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
