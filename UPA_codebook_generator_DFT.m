@@ -1,3 +1,8 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Generate DFT codebook.
+% Author: Ahmed Alkhateeb
+% 2019
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function [F_CB,all_beams]=UPA_codebook_generator_DFT(Mx,My,Mz,over_sampling_x,over_sampling_y,over_sampling_z,ant_spacing)
 
 kd=2*pi*ant_spacing;
