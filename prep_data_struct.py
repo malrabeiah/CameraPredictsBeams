@@ -1,3 +1,8 @@
+"""
+Script could be used as a template for preparing the image-beam data structure required to train
+the modified ResNet on beam or blockage prediction. NOTE: script might need modification based on the
+dataset you generated and where it is saved. PLEASE READ THROUGH.
+"""
 import numpy as np
 import h5py as h5
 import pickle
@@ -6,8 +11,8 @@ import skimage.io as imio
 import os
 from shutil import copyfile
 
-root_img_dir = '/home/malrabei/Datasets/ViWi_dataset/dist_cams/rgb'
-codebook = sciio.loadmat('DFT_codebook64')['W']# Every column is a beam
+root_img_dir = '' # Where ViWi images are
+codebook = sciio.loadmat('DFT_codebook64')['W']# Every column is a beam (codebook must be generated beforehand, see UPA_codebook_generator_DFT.m)
 
 def getMATLAB(matlab_file=None, save_mode=False,pickle_name=None):
     '''
@@ -21,7 +26,7 @@ def getMATLAB(matlab_file=None, save_mode=False,pickle_name=None):
     :return: dictionary of numpy arrays containing the raw channel and location data.
     -----------------------------------------------------------------------------------
     NOTE:
-    The data MATLAB structure has to be prepared after gemerating the wireless data using the ViWi data-generation
+    The MATLAB data structure has to be prepared following the generation of the wireless data using the ViWi data-generation
     script.
     '''
     # Read MATLAB structure:
@@ -71,13 +76,13 @@ def beamPredStruct(raw_data,codebook,val_per,image_path=None):
     image_names = os.listdir(image_path)
     image_names = sorted(image_names)
     shuf_ind = np.random.permutation(len(image_names))
-    loc = raw_data['loc'][:, 0:2]# User coordinates as output by DeepMIMO
+    loc = raw_data['loc'][:, 0:2]# User coordinates as output by ViWi
     num_train = len(image_names) - np.ceil( val_per*len(image_names) )
     count = 0
     train_list = []
     test_list = []
     for i in shuf_ind:
-        # Find the coordinates in the image:
+        # Find the coordinates in the image: (NOTE an image is tagged with the coordinates of its single user)
         split_name = image_names[i].split('_')
         x_axis = float( split_name[2] )
         y_axis = float( split_name[3][:-4] )
@@ -141,7 +146,7 @@ def blockagePredStruct(raw_data,codebook,val_per,image_path=None):
     image_names = os.listdir(image_path)
     image_names = sorted(image_names)
     shuf_ind = np.random.permutation(len(image_names))
-    loc = raw_data['loc'][:, 0:2]  # User coordinates as output by DeepMIMO
+    loc = raw_data['loc'][:, 0:2]  # User coordinates as output by ViWi
     num_train = len(image_names) - np.ceil(val_per * len(image_names))
     count = 0
     train_list = []
