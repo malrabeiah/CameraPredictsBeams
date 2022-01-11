@@ -4,6 +4,18 @@
 % 2019
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function [F_CB,all_beams]=UPA_codebook_generator_DFT(Mx,My,Mz,over_sampling_x,over_sampling_y,over_sampling_z,ant_spacing)
+%%%%%%%%
+% Function arguments:
+% Mx: Number of antenna elements on x-axis
+% My: Number of antenna elements on y-axis
+% Mz: Number of antenna elements on z-axis
+% over_sampling_x: sampling factor along x-axis (default = 1)
+% over_sampling_y: sampling factor along y-axis (default = 1)
+% over_sampling_z: sampling factor along z-axis (default = 1)
+% ant_spacing: antenna spacing (default 0.5, half wave-length)
+%
+% Added by: Muhammad Alrabeiah, 2022.
+%%%%%%%%
 
 kd=2*pi*ant_spacing;
 antx_index=0:1:Mx-1;
